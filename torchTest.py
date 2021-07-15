@@ -28,3 +28,5 @@ t3 = torch.randn(1,1,3,3)
 t4 = torch.randn(1,1,3,3)
 t5 = torch.cat((t3,t4),0)
 print(t5)
+
+# tensor view (reshape)a
