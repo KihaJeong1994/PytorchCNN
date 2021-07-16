@@ -15,6 +15,7 @@ nb_epochs = 2000
 for epoch in range(nb_epochs+1):
     hypothesis = W * x_train + b
     cost = torch.mean((hypothesis - y_train) ** 2)
+    # do not accumulate gradient
     optimizer.zero_grad()
     # gradient calculate
     cost.backward()
